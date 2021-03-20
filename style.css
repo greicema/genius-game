@@ -13,12 +13,40 @@ body {
 
 .genius {
     display: grid;
-    grid-template-areas: 'green red' 'yellow blue';
+    grid-template-areas: 'verde amarelo' 'vermelho azul';
     grid-gap: 10px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
-    border-radius: 70%;
+    border-radius: 90%;
     /*margin-top: 10%;*/
-    width: 500px;
+    width: 630px;
     height: 600px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: #0085C7;
+    border-bottom-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: #FAE57A;
+    border-top-right-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: #E11C2D;
+    border-bottom-left-radius: 100%
+}
+
+.green {
+    grid-area: verde;
+    background-color: #7CC979;
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.5;
 }
